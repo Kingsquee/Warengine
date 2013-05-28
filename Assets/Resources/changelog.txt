@@ -1,0 +1,51 @@
+[Build 8.0]
+	+ Initial lookup tables
+	+ Terrain properties!
+	+ Can add units in editor
+	+ Can add terrain properties in editor
+	+ We're on Github now!
+
+
+[Build 7.0]
+	+ Added different types of terrain
+	+ Added terrain autotiling.
+	+ Added terrain level editor. Push F2 to activate it.
+	+ Pathfinder respects terrain altitude when planning route
+
+[Build 6.0]
+	+ Added in-game changelog!
+	+ Abilities are now modular, rather than unit-specific. 
+	+ Restructured input code to solely use events.
+	+ Tiles are always instantiated now - gives UX improvements and performance increase.
+	- Removed the 'feature' of being able to select another object while an ability was being performed. (This fixed numerous other glitches in the process).
+	- Disabled Altitude. Going to redesign how this works.
+
+[Build 5.0]
+    + Added Cursor that follows mouse.
+    + Added Altitude! Push Shift while selecting a unit.
+    + Fixed breakage when you mash shift.
+    + Fixed two tile fields appearing momentarily after clicking another unit when pushing shift.
+    + Changed camera rotation to lock to 90* angles rather than 45*. 
+
+Known issues:
+    Camera rotation and unit actions currently can't happen at the same time. 
+
+[Build 4.0]
+    + Arrows now show your path.
+    + Tightened up selection code - Can only order one unit at a time.
+    + Changed camera rotation controls slightly.
+    + Changed unit selections - click on the tile to select the unit.
+    + Fixed glitch where manual pathfinding ignored obstacles.
+    + Fixed double-clicking on units breaking everything. 
+
+Known issues:
+	Camera rotation and unit actions currently can't happen at the same time. 
+
+[Build 3.0]
+-Miscellanious Changes
+
+[Build 2.0]
+-Fixed broken paths
+
+[Build 1.0]
+This is an unembellished reimplementation of Advance Wars' pathfinding. Unfortunately, the flexibility and speed of where the mouse can go is far greater than the GBA's D-pad, resulting in broken paths. For now, I've worked around this by limiting adding of new path nodes to those adjacent to the last node in the path. The next step will be to enhance this by auto-connecting broken paths using a seperate pathfinding function (A*). In the meantime, suffer through this crude buckleys-solution.

@@ -1,4 +1,4 @@
 warengine
 =========
 
-Advance Wars style engine built atop Unity3d
+work-in-progress Advance Wars style engine built atop Unity3D
