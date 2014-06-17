@@ -1,0 +1,5 @@
+[Controls]
+	WASD = Move Camera
+	QE   = Rotate Camera
+	Left Click = Select / Act
+	F2   = Toggle Level Editor

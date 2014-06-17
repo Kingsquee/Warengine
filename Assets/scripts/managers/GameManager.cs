@@ -11,6 +11,12 @@ public class GameManager : MonoBehaviour {
     private static bool _allowSelection = true;
 
     string changelog;
+    string helpfile;
+
+    string getHelpFile()
+    {
+        return (Resources.Load( "helpfile" ) as TextAsset).text;
+    }
 
     string getMostRecentChangelog()
     {
@@ -48,16 +54,21 @@ public class GameManager : MonoBehaviour {
     void Awake()
     {
         cursor = Transform.FindObjectOfType( typeof( HighlightCursor ) ) as HighlightCursor;
+        helpfile = getHelpFile();
         changelog = getMostRecentChangelog();
     }
 
-    /*
+    
     void OnGUI()
     {
+        if (Program.mode != ProgramMode.Game) 
+            return;
+
         GUI.contentColor = Color.black;
+        GUILayout.Label( helpfile );
         GUILayout.Label( changelog );
     }
-    */
+    
 	
     Ray ray;
 

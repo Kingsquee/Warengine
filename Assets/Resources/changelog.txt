@@ -1,3 +1,7 @@
+[Build 8.1]
+	+ Fixed Version Control issues
+	+ Added Help
+
 [Build 8.0]
 	+ Initial lookup tables
 	+ Terrain properties!
